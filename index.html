@@ -3,37 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DigiSarthi - Common Service Centre</title>
+  <title>e-Services Community Kalampur</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>DigiSarthi</h1>
-    <p>Common Service Centre | Kalampur</p>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <img src="assets/logo.png" alt="Logo" class="logo"/>
+      <h1>e-Services Community Kalampur</h1>
+      <p>Empowering Digital India from the grassroots</p>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>One Stop Solution for All Online Services</h2>
-    <p>Apply PAN, Passport, Aadhar Update, Recharge, Bill Payment & More</p>
-    <a href="https://wa.me/919337193386" target="_blank" class="whatsapp-btn">📲 Order on WhatsApp</a>
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <div class="container">
+      <h2>Your One-Stop CSC Solution</h2>
+      <p>All CSC services at one place. Reliable. Fast. Trusted.</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
   </section>
 
-  <section class="services">
-    <h3>Our Services</h3>
-    <ul>
-      <li>✅ PAN Card Services</li>
-      <li>✅ Aadhar Update</li>
-      <li>✅ Mobile/DTH Recharge</li>
-      <li>✅ Electricity Bill Payment</li>
-      <li>✅ Passport Apply</li>
-      <li>✅ Online Forms & Exam Apply</li>
-      <li>✅ Resume & Print Services</li>
-      <li>✅ Government Scheme Updates</li>
-    </ul>
+  <!-- News Ticker -->
+  <section class="news-ticker">
+    <div class="ticker-title">🔔 Latest Updates:</div>
+    <marquee behavior="scroll" direction="left">
+      PM Kisan update available | PAN card new rules | Free scholarship registration open | Voter ID link with Aadhaar
+    </marquee>
   </section>
 
-  <footer>
-    <p>© 2025 DigiSarthi CSC | Kalampur</p>
+  <!-- Services -->
+  <section id="services" class="services" data-aos="fade-right">
+    <div class="container">
+      <h2>Our Popular Services</h2>
+      <div class="service-grid">
+        <div class="service-box">PAN Card Apply</div>
+        <div class="service-box">Aadhaar Update</div>
+        <div class="service-box">PM Kisan Correction</div>
+        <div class="service-box">Scholarship Apply</div>
+        <div class="service-box">Birth/Death Certificate</div>
+        <div class="service-box">Voter ID Correction</div>
+        <div class="service-box">E-Shram Card</div>
+        <div class="service-box">Electricity Bill Payment</div>
+        <div class="service-box">Mobile & DTH Recharge</div>
+        <div class="service-box">Banking Services</div>
+        <div class="service-box">Passport Apply</div>
+        <div class="service-box">Online Form Fill</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section class="tools" data-aos="fade-up">
+    <div class="container">
+      <h2>Digital Tools</h2>
+      <div class="tool-grid">
+        <a href="tools/resize.html" class="tool-box">Photo/Signature Resize</a>
+        <a href="tools/pdf-convert.html" class="tool-box">PDF to JPG/JPG to PDF</a>
+        <a href="#" class="tool-box">PAN/Aadhaar Link Checker</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" data-aos="fade-right">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are a collective of CSC operators from Kalampur, dedicated to delivering reliable digital services to rural citizens. Our mission is to create a transparent, fast and unified service experience.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" data-aos="zoom-in">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/your-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p>📍 Kalampur, Odisha | 📞 +91-XXXXXXXXXX | 📧 support@csccommunity.in</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 e-Services Community Kalampur. All Rights Reserved.</p>
+    </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>
