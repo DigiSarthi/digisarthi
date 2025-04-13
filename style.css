@@ -1,261 +1,52 @@
-/* Importing Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSC Community - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-/* Base Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to CSC Community</h1>
+      <p>Your one-stop platform for all Digital Services, Govt Schemes & Tools.</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
+  </section>
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #f0f2f5;
-  color: #333;
-  scroll-behavior: smooth;
-}
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Popular Services</h2>
+    <div class="service-grid">
+      <a href="pan.html" class="service-card">
+        <h3>PAN Card Service</h3>
+        <p>Apply or update your PAN with ease.</p>
+      </a>
+      <a href="aadhar.html" class="service-card">
+        <h3>Aadhaar Services</h3>
+        <p>Link mobile, update info or check status.</p>
+      </a>
+      <a href="voter.html" class="service-card">
+        <h3>Voter ID Services</h3>
+        <p>New registration, correction, status.</p>
+      </a>
+      <a href="scholarship.html" class="service-card">
+        <h3>Scholarship Portal</h3>
+        <p>Submit or track your applications.</p>
+      </a>
+      <a href="mocktest.html" class="service-card">
+        <h3>Mock Test Platform</h3>
+        <p>Practice online exams with solutions.</p>
+      </a>
+      <a href="photo-resize.html" class="service-card">
+        <h3>Resize Photo/Sign</h3>
+        <p>Instantly adjust photo size & format.</p>
+      </a>
+    </div>
+  </section>
 
-/* Header */
-.header {
-  background: linear-gradient(to right, #013b6d, #005fa3);
-  color: #fff;
-  text-align: center;
-  padding: 50px 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.header .logo {
-  width: 90px;
-  margin-bottom: 15px;
-}
-
-.header h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-}
-
-.header p {
-  font-size: 1.2rem;
-}
-
-/* Hero Section */
-.hero {
-  background: linear-gradient(to bottom right, #e9f5ff, #ffffff);
-  padding: 100px 20px;
-  text-align: center;
-  position: relative;
-}
-
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  color: #003b7a;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: auto;
-  color: #555;
-}
-
-.btn {
-  margin-top: 25px;
-  background: #005fa3;
-  color: white;
-  padding: 14px 35px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.btn:hover {
-  background: #013b6d;
-}
-
-/* News Ticker */
-.news-ticker {
-  display: flex;
-  background: #fff8e1;
-  padding: 12px;
-  align-items: center;
-  gap: 15px;
-  border-top: 2px solid #ffc107;
-  border-bottom: 2px solid #ffc107;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #444;
-}
-
-.ticker-title {
-  background: #ffc107;
-  padding: 8px 15px;
-  border-radius: 4px;
-  color: #222;
-}
-
-/* Services Section */
-.services {
-  padding: 70px 20px;
-  background: #ffffff;
-}
-
-.services h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 40px;
-  color: #003b7a;
-}
-
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-}
-
-.service-box {
-  background: #f1f9ff;
-  padding: 25px;
-  border-radius: 12px;
-  border-left: 5px solid #0072bb;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.08);
-  transition: 0.3s ease;
-}
-
-.service-box:hover {
-  transform: translateY(-5px);
-  background-color: #dbefff;
-}
-
-/* Tools Section */
-.tools {
-  padding: 70px 20px;
-  background: #f8f9fa;
-}
-
-.tools h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #003b7a;
-}
-
-.tool-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.tool-box {
-  background: #fff;
-  padding: 20px 30px;
-  border: 2px solid #005fa3;
-  border-radius: 10px;
-  text-decoration: none;
-  color: #005fa3;
-  font-weight: bold;
-  transition: 0.3s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.tool-box:hover {
-  background-color: #005fa3;
-  color: #fff;
-}
-
-/* About Section */
-.about {
-  padding: 60px 20px;
-  background-color: #fff;
-}
-
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #003b7a;
-}
-
-.about p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #555;
-}
-
-/* Contact Section */
-.contact {
-  padding: 60px 20px;
-  background-color: #f4f4f4;
-}
-
-.contact h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #003b7a;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  margin: auto;
-}
-
-.contact input, .contact textarea {
-  padding: 14px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-.contact button {
-  background-color: #005fa3;
-  color: #fff;
-  padding: 12px;
-  border: none;
-  border-radius: 30px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.contact button:hover {
-  background-color: #003b7a;
-}
-
-.contact p {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 0.95rem;
-  color: #444;
-}
-
-/* Footer */
-.footer {
-  background-color: #002c54;
-  color: #fff;
-  padding: 25px 20px;
-  text-align: center;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .btn {
-    padding: 12px 25px;
-    font-size: 0.9rem;
-  }
-
-  .service-box, .tool-box {
-    font-size: 0.95rem;
-  }
-}
+</body>
+</html>
