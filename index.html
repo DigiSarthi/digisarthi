@@ -3,50 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CSC Community - Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>SC Business | Home</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 </head>
 <body>
 
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🛡️ SC Business</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Welcome to CSC Community</h1>
-      <p>Your one-stop platform for all Digital Services, Govt Schemes & Tools.</p>
-      <a href="#services" class="btn">Explore Services</a>
-    </div>
+  <section class="hero" data-aos="fade-up">
+    <h1>Welcome to SC Business Portal</h1>
+    <p>Your one-stop solution for all digital seva & CSC services.</p>
+    <a href="#services" class="btn">Explore Services</a>
   </section>
 
-  <!-- Services Section -->
+  <!-- Services Grid -->
   <section class="services" id="services">
-    <h2>Our Popular Services</h2>
-    <div class="service-grid">
-      <a href="pan.html" class="service-card">
-        <h3>PAN Card Service</h3>
-        <p>Apply or update your PAN with ease.</p>
-      </a>
-      <a href="aadhar.html" class="service-card">
+    <h2 data-aos="fade-up">Our Main Services</h2>
+    <div class="grid">
+      <div class="card" data-aos="zoom-in">
+        <h3>PAN Card Apply</h3>
+        <p>Online PAN services with doorstep delivery.</p>
+        <a href="services/pan-card.html">Apply Now</a>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="100">
         <h3>Aadhaar Services</h3>
-        <p>Link mobile, update info or check status.</p>
-      </a>
-      <a href="voter.html" class="service-card">
-        <h3>Voter ID Services</h3>
-        <p>New registration, correction, status.</p>
-      </a>
-      <a href="scholarship.html" class="service-card">
-        <h3>Scholarship Portal</h3>
-        <p>Submit or track your applications.</p>
-      </a>
-      <a href="mocktest.html" class="service-card">
-        <h3>Mock Test Platform</h3>
-        <p>Practice online exams with solutions.</p>
-      </a>
-      <a href="photo-resize.html" class="service-card">
-        <h3>Resize Photo/Sign</h3>
-        <p>Instantly adjust photo size & format.</p>
-      </a>
+        <p>Linking, update guidance, and more.</p>
+        <a href="services/aadhar.html">View Info</a>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Scholarship Apply</h3>
+        <p>Form filling for state & national scholarships.</p>
+        <a href="#">Start</a>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="300">
+        <h3>PM Kisan / Awas Yojana</h3>
+        <p>Registration & help desk available.</p>
+        <a href="#">Register</a>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="400">
+        <h3>DL / RC Services</h3>
+        <p>Driving license & RC assistance.</p>
+        <a href="#">Apply</a>
+      </div>
+      <div class="card" data-aos="zoom-in" data-aos-delay="500">
+        <h3>Passport Assistance</h3>
+        <p>Help with online form & documents.</p>
+        <a href="#">Get Help</a>
+      </div>
     </div>
   </section>
 
+  <!-- Tools Section -->
+  <section class="tools" data-aos="fade-up">
+    <h2>Digital Tools</h2>
+    <div class="grid">
+      <div class="tool-card">
+        <h4>📷 Photo & Signature Resize</h4>
+        <a href="tools/resize.html">Use Tool</a>
+      </div>
+      <div class="tool-card">
+        <h4>📤 Document Upload Panel</h4>
+        <a href="#">Upload Now</a>
+      </div>
+      <div class="tool-card">
+        <h4>📄 PDF to JPG / Merge</h4>
+        <a href="#">Try Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Info -->
+  <section class="info-section" data-aos="fade-left">
+    <h2>Updates & Notices</h2>
+    <ul class="news-ticker">
+      <li>🔔 New Job alert – SSC CHSL form out now!</li>
+      <li>📢 PM Kisan eKYC last date extended.</li>
+      <li>🆕 New Digital Seva Portal update live.</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SC Business Community | Powered by CSC Kalampur</p>
+    <p><a href="https://wa.me/91XXXXXXXXXX">📱 WhatsApp Support</a></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
